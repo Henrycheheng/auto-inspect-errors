@@ -73,7 +73,7 @@ async function runPluginLogic(): Promise<boolean> {
                 ignoreRules.push(new vscode.RelativePattern(workspaceFolder, 'node_modules/**'));
 
                 // 使用异步 vscode.workspace.findFiles 替代同步 vscode.workspace.findFiles
-                const nonIgnoredFiles = await vscode.workspace.findFiles('**/*.{ts,tsx,vue,js,css}', '**/node_modules/**', 1000);
+                const nonIgnoredFiles = await vscode.workspace.findFiles('**/*.{ts,tsx,vue,js,,json,css}', '**/node_modules/**', 1000);
 
                 const matchingFiles = nonIgnoredFiles.filter(file => {
                     const filePath = path.relative(workspaceFolder, file.fsPath);
