@@ -32,7 +32,7 @@ export async function activate(context: vscode.ExtensionContext) {
 }
 
 async function runPluginLogic(): Promise<boolean> {
-    vscode.commands.registerCommand('auto-inspect-errors.helloWorld', async () => {
+    vscode.commands.registerCommand('auto-inspect-errors.AutoInspectErrors', async () => {
             vscode.window.showInformationMessage('Auto-inspecting errors is about to registing...');
             // 获取当前工作区
             const workspaceFolders  = vscode.workspace.workspaceFolders;

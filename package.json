@@ -1,6 +1,6 @@
 {
   "name": "auto-inspect-errors",
-  "displayName": "auto-inspect-errors",
+  "displayName": "Auto Inspecterrors",
   "description": "an auto inspect-errors for .ts and count error file num so on.",
   "version": "0.0.1",
   "publisher": "1184563958",
@@ -18,8 +18,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "auto-inspect-errors.helloWorld",
-        "title": "Hello World"
+        "command": "auto-inspect-errors.AutoInspectErrors",
+        "title": "ASC"
       }
     ]
   },
