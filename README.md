@@ -1,10 +1,10 @@
 # auto-inspect-errors README
 
-* an auto inspect-errors for .ts and count error file num so on.
+* an auto inspect-errors for `/\.(jsx?|tsx?|vue|json|css)$/gi` and and try to fix in eslint and will close files which had looks fine so on.
 
 ## Features
 
-take it easy and only use `ctrl + shift + p`,then choose `auto-inspect-errors` command and then u will paly with style errors.
+take it easy and only use `ctrl + shift + p`,then print `ASC` for startup the inspect command and then u will paly with style errors.
 
 ## Requirements
 
