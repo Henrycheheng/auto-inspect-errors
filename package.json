@@ -3,6 +3,7 @@
   "displayName": "auto-inspect-errors",
   "description": "an auto inspect-errors for .ts and count error file num so on.",
   "version": "0.0.1",
+  "publisher": "koi",
   "engines": {
     "vscode": "^1.54.0"
   },
