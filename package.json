@@ -2,7 +2,7 @@
   "name": "auto-inspect-errors",
   "displayName": "Auto Inspecterrors",
   "description": "an auto inspect-errors for .ts and count error file num so on.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "1184563958",
   "engines": {
     "vscode": "^1.54.0"
