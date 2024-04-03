@@ -2,7 +2,7 @@
   "name": "auto-inspect-errors",
   "displayName": "Auto Inspecterrors",
   "description": "an auto inspect-errors for .ts and count error file num so on.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "1184563958",
   "engines": {
     "vscode": "^1.54.0"
@@ -25,6 +25,10 @@
   },
   "scripts": {
     "cz": "czg",
+    "release-major": "standard-version --release-as major",
+    "release-minor": "standard-version --release-as minor",
+    "release-patch": "standard-version --release-as patch",
+    "release": "standard-version",
     "vscode:prepublish": "npm run esbuild-base -- --minify",
     "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
     "esbuild": "npm run esbuild-base -- --sourcemap",
@@ -38,13 +42,12 @@
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
     "@vscode/test-electron": "^2.3.6",
+    "czg": "^1.9.1",
     "esbuild": "^0.19.7",
     "eslint": "^8.52.0",
     "glob": "^10.3.10",
     "mocha": "^10.2.0",
-    "czg": "^1.9.1",
+    "standard-version": "^9.5.0",
     "typescript": "^5.2.2"
-  },
-  "dependencies": {
   }
 }
